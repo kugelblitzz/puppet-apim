@@ -39,7 +39,7 @@ class apim::params inherits apim_common::params {
      This is will become part of the End Point Reference of the
      services deployed on this server instance.
   */
-  $hostname = 'localhost'
+  $hostname = 'apim01.local'
 
   # ----- api-manager.xml config params -----
   $oauth_configs_revoke_api_url = 'https://localhost:${https.nio.port}/revoke'
