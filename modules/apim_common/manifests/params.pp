@@ -20,9 +20,9 @@ class apim_common::params {
   $version = "3.2.0"
 
   # Set the location the product packages should reside in (eg: "local" in the /files directory, "remote" in a remote location)
-  #$pack_location = "local"
-  $pack_location = "remote"
-  $remote_jdk = "http://192.168.1.17/amazon-corretto-8-x64-linux-jdk.tar.gz"
+  $pack_location = "local"
+  #$pack_location = "remote"
+  #$remote_jdk = "http://192.168.1.17/amazon-corretto-8-x64-linux-jdk.tar.gz"
 
   $user = 'jonathan'
   $user_group = 'jonathan'
@@ -105,7 +105,7 @@ class apim_common::params {
     }
     default: {
       $pack = "wso2am-${version}"
-      $remote_pack = "http://192.168.1.17/wso2am-3.2.0.zip"
+      #remote_pack = "http://192.168.1.17/wso2am-3.2.0.zip"
       $server_script_path = "${product_dir}/${pack}/bin/wso2server.sh"
       $pid_file_path = "${product_dir}/${pack}/wso2carbon.pid"
       $optimize_params = ""
