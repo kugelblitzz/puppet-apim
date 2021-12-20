@@ -174,16 +174,16 @@ class apim_common::params {
 
   # ----- Master-datasources config params -----
 
-  $wso2am_db_url = 'jdbc:h2:./repository/database/WSO2AM_DB;DB_CLOSE_ON_EXIT=FALSE'
-  $wso2am_db_username = 'wso2carbon'
-  $wso2am_db_password = 'wso2carbon'
-  $wso2am_db_type = 'h2'
+  $wso2am_db_url = 'jdbc:mysql://carbondb.mysql-wso2.com:3306/apim_db?useSSL=false&amp;allowPublicKeyRetrieval=true'
+  $wso2am_db_username = 'apimadmin'
+  $wso2am_db_password = 'apimadmin'
+  $wso2am_db_type = 'mysql'
   $wso2am_db_validation_query = 'SELECT 1'
 
-  $wso2shared_db_url = 'jdbc:h2:./repository/database/WSO2SHARED_DB;DB_CLOSE_ON_EXIT=FALSE'
-  $wso2shared_db_username = 'wso2carbon'
-  $wso2shared_db_password = 'wso2carbon'
-  $wso2shared_db_type = 'h2'
+  $wso2shared_db_url = 'jdbc:mysql://carbondb.mysql-wso2.com:3306/shared_db?useSSL=false&amp;allowPublicKeyRetrieval=true'
+  $wso2shared_db_username = 'sharedadmin'
+  $wso2shared_db_password = 'sharedadmin'
+  $wso2shared_db_type = 'mysql'
   $wso2shared_db_validation_query = 'SELECT 1'
 
   # ----- Carbon.xml config params -----
