@@ -72,10 +72,10 @@ class apim inherits apim::params {
     This will copy some_file to install_path -> repository.
     Note: Ensure that file is available in modules -> apim -> files
   */
-  # file { "${install_path}/repository/some_file":
-  #   owner  => $user,
-  #   group  => $user_group,
-  #   mode   => '0644',
-  #   source => "puppet:///modules/${module_name}/some_file",
-  # }
+  file { "${carbon_home}/repository/components/lib/mysql-connector-java-8.0.27.jar":
+    owner  => $user,
+    group  => $user_group,
+    mode   => '0644',
+    source => "puppet:///modules/${module_name}/mysql-connector-java-8.0.27.jar",
+  }
 }

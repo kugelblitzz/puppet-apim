@@ -1,0 +1,43 @@
+// ------------------------------------------------------------------
+// Transitive dependencies of this project determined from the
+// maven pom organized by organization.
+// ------------------------------------------------------------------
+
+WSO2 Identity Server Apps - Recovery Portal
+
+
+From: 'an unknown organization'
+  - axis2.wso2 (http://wso2.org) org.apache.axis2.wso2:axis2:bundle:1.6.1-wso2v40
+
+  - axis2.client.wso2 (http://wso2.org) org.apache.axis2.wso2:axis2-client:bundle:1.6.1-wso2v40
+
+  - axis2.json.wso2 (http://wso2.org) org.apache.axis2.wso2:axis2-json:bundle:1.6.1-wso2v40
+
+  - woden.wso2 (http://wso2.org) org.apache.woden.wso2:woden:bundle:1.0.0.M8-wso2v1
+
+  - HttpClient (http://www.wso2.com) org.wso2.orbit.org.apache.httpcomponents:httpclient:bundle:4.3.1.wso2v2
+
+
+From: 'Oracle Corporation' (http://www.oracle.com/)
+  - jersey-client (https://jersey.java.net/jersey-client/) com.sun.jersey:jersey-client:jar:1.19.1
+    License: CDDL 1.1  (http://glassfish.java.net/public/CDDL+GPL_1_1.html)    License: GPL2 w/ CPE  (http://glassfish.java.net/public/CDDL+GPL_1_1.html)
+  - jersey-core (https://jersey.java.net/jersey-core/) com.sun.jersey:jersey-core:jar:1.19.1
+    License: CDDL 1.1  (http://glassfish.java.net/public/CDDL+GPL_1_1.html)    License: GPL2 w/ CPE  (http://glassfish.java.net/public/CDDL+GPL_1_1.html)
+  - jersey-multipart (https://jersey.java.net/jersey-contribs/jersey-multipart/) com.sun.jersey.contribs:jersey-multipart:jar:1.19.1
+    License: CDDL 1.1  (http://glassfish.java.net/public/CDDL+GPL_1_1.html)    License: GPL2 w/ CPE  (http://glassfish.java.net/public/CDDL+GPL_1_1.html)
+  - MIME streaming extension (http://mimepull.java.net) org.jvnet.mimepull:mimepull:jar:1.9.3
+    License: CDDL 1.1  (https://glassfish.java.net/public/CDDL+GPL_1_1.html)    License: GPL2 w/ CPE  (https://glassfish.java.net/public/CDDL+GPL_1_1.html)
+
+From: 'The Apache Software Foundation' (http://www.apache.org/)
+  - Commons Logging (http://commons.apache.org/logging) commons-logging:commons-logging:jar:1.1.1
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'WSO2' (http://www.wso2.org/)
+  - WSO2 Carbon - Identity Management Endpoint Util (http://wso2.org/org.wso2.carbon.identity.mgt.endpoint.util) org.wso2.carbon.identity.framework:org.wso2.carbon.identity.mgt.endpoint.util:bundle:5.16.73
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - WSO2 Carbon - Identity Provider Mgt Stub (http://wso2.org) org.wso2.carbon.identity.framework:org.wso2.carbon.idp.mgt.stub:bundle:5.16.73
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+
+
+
