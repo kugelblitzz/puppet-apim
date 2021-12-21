@@ -138,15 +138,11 @@ class apim_common::params {
     }
   ]
 
-  $throttle_decision_endpoints = '"tcp://tm1.local:5672","tcp://tm2.local:5672"'
+  $throttle_decision_endpoints = '"tcp://apim01.local:5672"'
   $throttling_url_group = [
     {
-      traffic_manager_urls      => '"tcp://tm1.local:9611"',
-      traffic_manager_auth_urls => '"ssl://tm1.local:9771"'
-    },
-    {
-      traffic_manager_urls      => '"tcp://tm2.local:9611"',
-      traffic_manager_auth_urls => '"ssl://tm2.local:9771"'
+      traffic_manager_urls      => '"tcp://apim01.local:9611"',
+      traffic_manager_auth_urls => '"ssl://apim01.local:9711"'
     }
   ]
 
@@ -156,18 +152,18 @@ class apim_common::params {
       name                => 'Production and Sandbox',
       description         => 'This is a hybrid gateway that handles both production and sandbox token traffic.',
       server_url          => 'https://localhost:${mgt.transport.https.port}${carbon.context}services/',
-      ws_endpoint         => 'ws://localhost:9099',
-      wss_endpoint        => 'wss://localhost:8099',
-      http_endpoint       => 'http://localhost:${http.nio.port}',
-      https_endpoint      => 'https://localhost:${https.nio.port}'
+      ws_endpoint         => 'ws://apim01.local:9099',
+      wss_endpoint        => 'wss://apim01.local:8099',
+      http_endpoint       => 'http://apim01.local:${http.nio.port}',
+      https_endpoint      => 'https://apim01.local:${https.nio.port}'
     }
   ]
 
   $key_manager_server_url = 'https://localhost:${mgt.transport.https.port}${carbon.context}services/'
   $key_validator_thrift_server_host = 'localhost'
 
-  $api_devportal_url = 'https://localhost:${mgt.transport.https.port}/devportal'
-  $api_devportal_server_url = 'https://localhost:${mgt.transport.https.port}${carbon.context}services/'
+  $api_devportal_url = 'https://apim01.local:${mgt.transport.https.port}/devportal'
+  $api_devportal_server_url = 'https://apim01.local:${mgt.transport.https.port}${carbon.context}services/'
 
   $traffic_manager_receiver_url = 'tcp://${carbon.local.ip}:${receiver.url.port}'
   $traffic_manager_auth_url = 'ssl://${carbon.local.ip}:${auth.url.port}'
@@ -189,16 +185,16 @@ class apim_common::params {
   # ----- Carbon.xml config params -----
   $ports_offset = 0
 
-  $key_store_location = 'wso2carbon.jks'
+  $key_store_location = 'newkeystore.jks'
   $analytics_key_store_location = '${sys:carbon.home}/resources/security/wso2carbon.jks'
-  $key_store_password = 'wso2carbon'
-  $key_store_key_alias = 'wso2carbon'
-  $key_store_key_password = 'wso2carbon'
+  $key_store_password = 'mypassword'
+  $key_store_key_alias = 'apim01cert'
+  $key_store_key_password = 'mypassword'
 
-  $internal_keystore_location = 'wso2carbon.jks'
-  $internal_keystore_password = 'wso2carbon'
-  $internal_keystore_key_alias = 'wso2carbon'
-  $internal_keystore_key_password = 'wso2carbon'
+  $internal_keystore_location = 'newkeystore.jks'
+  $internal_keystore_password = 'mypassword'
+  $internal_keystore_key_alias = 'apim01cert'
+  $internal_keystore_key_password = 'mypassword'
 
   $trust_store_location = 'client-truststore.jks'
   $analytics_trust_store_location = '${sys:carbon.home}/resources/security/client-truststore.jks'

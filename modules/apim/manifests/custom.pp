@@ -17,5 +17,13 @@
 # Class: apim::custom
 # This class is reserved to run custom user code before starting the server.
 class apim::custom {
-  # resources
+  file { "/mnt/apim/wso2am-3.2.0/repository/resources/security":
+    ensure => 'directory',
+    source => 'puppet:///modules/apim/apim01',
+    recurse => 'remote',
+    path => '/mnt/apim/wso2am-3.2.0/repository/resources/security/',
+    owner => jonathan,
+    group => jonathan,
+    mode  => '0644',
+  }
 }
